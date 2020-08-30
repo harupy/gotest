@@ -12,3 +12,5 @@ jobs:
       - run: gofmt -l .
       - run: go test
       - run: go run main.go
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
