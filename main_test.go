@@ -10,7 +10,7 @@ func TestSum(t *testing.T) {
 }
 
 func TestFoo(t *testing.T) {
-	expected := 2
+	expected := 3
 	if actual := Sum(1, 2); actual != expected {
 		t.Fatalf("expected = %d, actual = %d", actual, expected)
 	}
